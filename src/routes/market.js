@@ -6,7 +6,7 @@ const supermarket=[{
 
 }]
 router.get('/market',(req,res)=>{
-    console.log(req.query);
+  //  console.log(req.query);
     const { age }=req.query;
     const parsedAge=parseInt(age);
     if(!isNaN(parsedAge)){

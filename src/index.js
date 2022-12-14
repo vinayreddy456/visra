@@ -8,7 +8,7 @@ const groceriesRouter=require('./routes/groceries.js')
 const supermarketRouter=require('./routes/market');
 const authRoute=require('./routes/auth');
 const cookie=require('./cookies');
-const sessionpar=require('./session');
+//const sessionpar=require('./session');
 require('./Database/connect.js');
 require('./Database/Schemas/user');
 const app=express();
@@ -28,5 +28,6 @@ app.use(session({
 app.use(authRoute);
 app.use(cookie);
 app.use(groceriesRouter);
+
 app.use(supermarketRouter);
 

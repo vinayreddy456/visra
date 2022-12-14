@@ -1,6 +1,6 @@
-const {Router}=require('express');
+/*const {Router}=require('express');
 const session=require('express-session');
-const store=new session.MemoryStore();
+//const store=new session.MemoryStore();
 const router=Router();
 
 router.use(session({
@@ -50,4 +50,4 @@ router.post('/login',(req,res)=>{
 
     
 });
-module.exports=router;
+module.exports=router;*/

@@ -35,7 +35,7 @@ router.get('/groceries/:item/:item',(request,response)=>{
 })
 //Required url
 router.get('/groceries/:item[a-z]',(request,response)=>{
-    console.log(request.params.item);
+   // console.log(request.params.item);
     response.send(200);
 });
 //wild card routes----if url not found in the given code
@@ -45,7 +45,7 @@ router.get('/groceries/:item[a-z]',(request,response)=>{
 
 //posting groceries list in the postman
 router.post('/groceries',(request,response)=>{
-    console.log(request.body);
+   // console.log(request.body);
     groceriesLst.push(request.body);
     response.send(201);
 });
