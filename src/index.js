@@ -5,8 +5,8 @@ const express=require('express');
 const session=require('express-session');
 const bodyParser = require('body-parser')
 const groceriesRouter=require('./routes/groceries.js')
-const supermarketRouter=require('./routes/market');
-const authRoute=require('./routes/auth');
+const supermarketRouter=require('./routes/market.js');
+const authRoute=require('./routes/auth.js');
 const cookie=require('./cookies');
 //const sessionpar=require('./session');
 require('./Database/connect.js');
