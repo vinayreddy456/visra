@@ -9,6 +9,9 @@ const supermarketRouter=require('./routes/market.js');
 const authRoute=require('./routes/auth.js');
 const cookie=require('./cookies');
 //const sessionpar=require('./session');
+app.get('/',(req,res)=>{
+    res.send("hello world")
+})
 require('./Database/connect.js');
 require('./Database/Schemas/user');
 const app=express();
