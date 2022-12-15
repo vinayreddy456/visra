@@ -12,7 +12,7 @@ const cookie=require('./cookies');
 require('./Database/connect.js');
 require('./Database/Schemas/user');
 const app=express();
-const Port=3002;
+const Port=process.env.port || 3002;
 app.listen(Port,()=> console.log('Running  express srever on the port $(Port}!'));
 
 app.use(bodyParser.json()) // for parsing application/json
